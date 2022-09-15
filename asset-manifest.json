@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "http://localhost:3000/static/css/main.458eb6ba.css",
+    "main.js": "http://localhost:3000/static/js/main.d4ddab91.js",
+    "static/media/Ingingerda.svg": "http://localhost:3000/static/media/Ingingerda.995ee3602fd4a97466f47b365086f2ed.svg",
+    "static/media/Olga.png": "http://localhost:3000/static/media/Olga.b1edc46cdcaae8d8a0c4.png",
+    "static/media/coin.svg": "http://localhost:3000/static/media/coin.683371c8d60bc8af578b6559f362ee4c.svg",
+    "static/media/Svistunova.svg": "http://localhost:3000/static/media/Svistunova.975c3572820f251230518a47d63c2549.svg",
+    "static/media/vladimir-coin.svg": "http://localhost:3000/static/media/vladimir-coin.bbf4ce0a538740696b74.svg",
+    "static/media/Dimon.svg": "http://localhost:3000/static/media/Dimon.a583b445f0e1441bda930ad89863361e.svg",
+    "static/media/warrior-coin.svg": "http://localhost:3000/static/media/warrior-coin.9395a43c6b412ff9265b.svg",
+    "static/media/AvenirNextCyr-Regular.ttf": "http://localhost:3000/static/media/AvenirNextCyr-Regular.d5515aff04ff81140f75.ttf",
+    "static/media/AvenirNextCyr-Demi.ttf": "http://localhost:3000/static/media/AvenirNextCyr-Demi.a0d51cdae611e6236949.ttf",
+    "static/media/AvenirNextCyr-Bold.ttf": "http://localhost:3000/static/media/AvenirNextCyr-Bold.d7a7f3ccfe2942965a98.ttf",
+    "static/media/Liza.svg": "http://localhost:3000/static/media/Liza.cd65f3a7a71b05d455e285198230c8f7.svg",
+    "static/media/Yarik.svg": "http://localhost:3000/static/media/Yarik.890cca6c4cf91aa16f2f9a6fd86cabdd.svg",
+    "static/media/map.png": "http://localhost:3000/static/media/map.aa40967d0022cc39229e.png",
+    "static/media/Diana.svg": "http://localhost:3000/static/media/Diana.1e4a3f98a2ee8a1b85e767349ea02de5.svg",
+    "static/media/logo.svg": "http://localhost:3000/static/media/logo.b51503470562808566e10427143d477a.svg",
+    "static/media/Katya.svg": "http://localhost:3000/static/media/Katya.2ea8a6c66cd2eec0e2b1445fd5d15de5.svg",
+    "static/media/logoText.svg": "http://localhost:3000/static/media/logoText.0e1d864209cb46c88bb823c6e6b59bb7.svg",
+    "static/media/sun.svg": "http://localhost:3000/static/media/sun.53d4ae589fff80d6262f7aad29ffd30f.svg",
+    "static/media/instagramm.svg": "http://localhost:3000/static/media/instagramm.33bd2d4d53226f31d09c4243466208e9.svg",
+    "static/media/linkedin.svg": "http://localhost:3000/static/media/linkedin.2350a9bf3c9b140985fa189546aea6e6.svg",
+    "static/media/moon.svg": "http://localhost:3000/static/media/moon.d8034562fca414e1b695107aa725ce72.svg",
+    "index.html": "http://localhost:3000/index.html",
+    "static/media/avatar.svg": "http://localhost:3000/static/media/avatar.f37ea7b3753941101529b1cc175b7b1d.svg",
+    "static/media/google.svg": "http://localhost:3000/static/media/google.ef31daa0f648279861c481ef9aa38e4a.svg",
+    "static/media/facebook-color.svg": "http://localhost:3000/static/media/facebook-color.2f9f9d1ea8f924e79d7b032363e1d6b1.svg",
+    "static/media/facebook.svg": "http://localhost:3000/static/media/facebook.3b46c6a5fb1b9e00d80e0dbd5ff99f07.svg",
+    "static/media/paper-plane.svg": "http://localhost:3000/static/media/paper-plane.19cf524fd993cf4f6b41a6967fdc5dc8.svg",
+    "static/media/notification.svg": "http://localhost:3000/static/media/notification.dbcc2d036797ded381e1b5a0d8600a55.svg",
+    "main.458eb6ba.css.map": "http://localhost:3000/static/css/main.458eb6ba.css.map",
+    "main.d4ddab91.js.map": "http://localhost:3000/static/js/main.d4ddab91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.458eb6ba.css",
+    "static/js/main.d4ddab91.js"
+  ]
+}
