@@ -1,0 +1,21 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  &__open {
+    .contentWrapper {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.divider {
+  height: 20px;
+  width: 100%;
+  background-image: $ukrainianFlag2;
+  margin-top: 37px;
+}
+
+.contentWrapper {
+  transition: all 1s;
+  overflow: hidden;
+}

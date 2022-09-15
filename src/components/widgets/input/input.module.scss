@@ -1,0 +1,75 @@
+@import "~assets/styles/constants.scss";
+
+.label {
+  display: block;
+  font-size: 20px;
+  // &:not(.label:first-of-type) {
+  margin-top: 20px;
+  // }
+
+  display: inline-flex;
+  @media (max-width: 780px) {
+    font-size: 16px;
+    text-shadow: $titleBorder;
+  }
+}
+
+.labelText:not(:empty) {
+  margin-left: 5px;
+}
+
+.input {
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  font-size: 17px;
+  padding-inline: 15px;
+  &::placeholder {
+    color: $gray;
+    opacity: 0.5;
+  }
+  &:-ms-input-placeholder {
+    color: $gray;
+    opacity: 0.5;
+  }
+  &::-ms-input-placeholder {
+    color: $gray;
+    opacity: 0.5;
+  }
+  &[type="checkbox"] {
+    height: 17px;
+    width: 17px;
+    margin: 0 12px 0;
+    transform: translateY(2px);
+    accent-color: $blue;
+    flex-shrink: 1;
+    @media (max-width: 480px) {
+      margin: 0 6px 0;
+    }
+  }
+  @media (max-width: 780px) {
+    height: 42px;
+    padding-inline: 10px;
+    border-radius: 7px;
+  }
+  @media (max-width: 480px) {
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0 6px 0;
+  }
+}
+
+textarea.input {
+  padding-block: 20px;
+  &::placeholder {
+    padding-top: 0;
+  }
+  &:-ms-input-placeholder {
+    padding-top: 0;
+  }
+  &::-ms-input-placeholder {
+    padding-top: 0;
+  }
+}

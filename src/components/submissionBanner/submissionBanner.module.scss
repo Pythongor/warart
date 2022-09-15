@@ -1,0 +1,58 @@
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  display: flex;
+  border: 3px solid black;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+}
+
+.picture {
+  // width: 50%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 300px;
+  background-image: url("~assets/images/Ingingerda.svg");
+  background-size: 400px;
+  background-position: 40% 40%;
+  background-repeat: no-repeat;
+  @media (max-width: 780px) {
+    flex-basis: 200px;
+    background-position: 75% -50%;
+  }
+}
+
+.rightContent {
+  // width: 50%;
+  flex-shrink: 1;
+  flex-grow: 2;
+  flex-basis: 400px;
+  padding: 20px 20px 40px 20px;
+  min-height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 780px) {
+    min-height: 300px;
+  }
+}
+
+.text {
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-bottom: 20px;
+  @media (max-width: 780px) {
+    font-size: 35px;
+  }
+  @media (max-width: 480px) {
+    font-size: 25px;
+  }
+}
+
+.link {
+  cursor: pointer;
+  &:hover {
+    color: $yellow;
+  }
+}
