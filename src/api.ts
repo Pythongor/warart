@@ -1,30 +1,3 @@
-import axios from "axios";
-import { store } from "ducks/store";
-
-class Api {
-  baseUrl = "http://127.0.0.1:8000";
-  request = async (
-    url: string,
-    method: string,
-    data?: { [key: string]: any }
-  ) => {
-    const { token } = store.getState();
-    return await axios({
-      method,
-      url: this.baseUrl + url,
-      data,
-      headers: {
-        "Content-Type": "multipart/form-data",
-        Authorization: token ? `Bearer ${token}` : "",
-      },
-    });
-  };
-  post = async (url: string, data: { [key: string]: any }) => {
-    return await this.request(url, "post", data);
-  };
-  get = async (url: string, data?: { [key: string]: any }) => {
-    return await this.request(url, "get", data);
-  };
-}
-
-export default new Api();
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a055d290429c4c41b5e020955bb3514e97bc43ef4fe31001dfd198e665e039e
+size 1099

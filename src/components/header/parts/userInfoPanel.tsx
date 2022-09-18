@@ -1,20 +1,3 @@
-import React from "react";
-import cn from "classnames";
-import Avatar from "assets/images/avatar.svg";
-import Notification from "assets/images/notification.svg";
-import Plane from "assets/images/paper-plane.svg";
-import styles from "../header.module.scss";
-
-const UserInfoPanel = () => (
-  <>
-    <img src={Avatar} alt="" className={styles.icon} />
-    <img
-      src={Notification}
-      alt=""
-      className={cn(styles.icon, styles.icon__bell)}
-    />
-    <img src={Plane} alt="" className={styles.icon} />
-  </>
-);
-
-export default UserInfoPanel;
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0b7ad1bb638ff7baacf8d2f98d35f4c50cc5eb07378e4649b29d600ce29ea63
+size 551

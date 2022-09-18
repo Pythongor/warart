@@ -1,24 +1,3 @@
-import { useTranslation } from "react-i18next";
-import { Section } from "components";
-import styles from "../submission.module.scss";
-
-const SubmissionSection = () => {
-  const { t } = useTranslation();
-  return (
-    <Section
-      title={
-        <>
-          {t("submissionSectionTitlePart1")}
-          <span className={styles.bold}>
-            {t("submissionSectionTitlePart2")}
-          </span>{" "}
-          {t("submissionSectionTitlePart3")}
-        </>
-      }
-    >
-      WAR<span className={styles.bold}>ART</span> {t("submissionText")}
-    </Section>
-  );
-};
-
-export default SubmissionSection;
+version https://git-lfs.github.com/spec/v1
+oid sha256:d995b380c551c3cc62582ef86c1ba363430f9268ced132c98bebcc74867cfd64
+size 609

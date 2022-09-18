@@ -1,19 +1,3 @@
-import { Accordion, Input } from "components/widgets";
-import { useTranslation } from "react-i18next";
-import styles from "../submission.module.scss";
-
-type OwnProps = {
-  isOpen?: boolean;
-};
-
-const TagsAccordion: React.FC<OwnProps> = ({ isOpen = false }) => {
-  const { t } = useTranslation();
-  return (
-    <Accordion isOpen={isOpen}>
-      <div className={styles.subtitle}>{t("selectTags")}</div>
-      <Input placeholder="Add up to 10 tags…" labelClass={styles.input} />
-    </Accordion>
-  );
-};
-
-export default TagsAccordion;
+version https://git-lfs.github.com/spec/v1
+oid sha256:05c69094eee491e696b9a4fda1d066e4a08638e6c8159e63583581700e05818a
+size 535

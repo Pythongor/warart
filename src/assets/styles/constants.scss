@@ -1,36 +1,3 @@
-$yellow: #e6c673;
-$yellow2: #eec464;
-$blue: #6c86b2;
-$blue2: #495a77;
-$gray: #707070;
-
-$ukrainianFlag1: linear-gradient(
-  rgba($blue, 0.15) 50%,
-  rgba($yellow, 0.15) 50%
-);
-$ukrainianFlag2: linear-gradient(rgba($blue, 0.8) 50%, rgba($yellow, 0.8) 50%);
-$titleBorder: 2px 0 whitesmoke, -2px 0 whitesmoke, 0 2px whitesmoke,
-  0 -2px whitesmoke, 1px 1px whitesmoke, -1px -1px whitesmoke,
-  1px -1px whitesmoke, -1px 1px whitesmoke;
-
-.bold {
-  font-weight: bold;
-}
-
-@mixin container {
-  margin: 0 auto;
-  max-width: 1000px;
-  @media (max-width: 1130px) {
-    margin: 0 175px;
-  }
-  @media (max-width: 780px) {
-    // max-width: 450px;
-    margin: 0 70px;
-  }
-  @media (max-width: 650px) {
-    margin: 0 50px;
-  }
-  @media (max-width: 480px) {
-    margin: 0 30px;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:05afd0092c104ada1ffd922c4b4bb024482563b04c6ec52c72a982645333539d
+size 767

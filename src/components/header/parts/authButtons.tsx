@@ -1,27 +1,3 @@
-import React from "react";
-import { connect } from "react-redux";
-import { setModal } from "ducks/actions";
-// import { Button } from "components/widgets";
-// import styles from "../header.module.scss";
-
-type DispatchProps = typeof MDTP;
-
-const AuthButtons: React.FC<DispatchProps> = ({ setModal }) => (
-  <>
-    {/* <Button
-      customClass={styles.authButton}
-      text="Log in"
-      onClick={() => setModal("LOGIN")}
-      type="blue"
-    />
-    <Button
-      customClass={styles.authButton}
-      text="Sign up"
-      onClick={() => setModal("SIGNUP")}
-    /> */}
-  </>
-);
-
-const MDTP = { setModal };
-
-export default connect(null, MDTP)(AuthButtons);
+version https://git-lfs.github.com/spec/v1
+oid sha256:53f7707fe86dca78f1af3b555d19c740fb231b89b940150f027b227fb6b7fd5e
+size 658

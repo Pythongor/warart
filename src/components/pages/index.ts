@@ -1,5 +1,3 @@
-export { default as HomePage } from "./home/home";
-export { default as CategoryPage } from "./category/category";
-export { default as AboutPage } from "./about/about";
-export { default as ProjectPage } from "./project/project";
-export { default as SubmissionPage } from "./submission/submission";
+version https://git-lfs.github.com/spec/v1
+oid sha256:5974065ecc579a322e008f0aeefe23a112cd4ba8558f45d0d2f0e8792417c5ff
+size 297

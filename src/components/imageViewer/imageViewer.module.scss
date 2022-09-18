@@ -1,24 +1,3 @@
-@import "~assets/styles/constants.scss";
-
-.wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(black, 0.9);
-  z-index: 9;
-}
-
-.image {
-  z-index: 10;
-  // width: 300px;
-  // height: 300px;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  z-index: 10;
-  object-fit: cover;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:afcaefb96d33371a28f9915df4ea610988964ffa22d3eaff576eb6597546f5dd
+size 402
