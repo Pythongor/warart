@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c4713bafc14fdddb0fa4b676e05b4bcdbc236f29aaaf3ef98ca961d7f84c7c1
-size 264
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/warart.iml" filepath="$PROJECT_DIR$/.idea/warart.iml" />
+    </modules>
+  </component>
+</project>
