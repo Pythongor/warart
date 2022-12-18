@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8016f7318ce6267b497f91a63a4935b6c7331cadfa0996e632a6f990a874ddf6
-size 292
+export const arrayCompare = <T>(a: T[], b: T[]): boolean => {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+  return true;
+};
+
+export const compare = (a: any, b: any) => {
+  return JSON.stringify(a) === JSON.stringify(b);
+};
