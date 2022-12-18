@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6537b7bf4dfa54ebf8955c999b859d6411e2956e5a869503877480666c5e6e1
-size 1392
+import { HandcraftProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: HandcraftProjectType = {
+    category: `visual`,
+    id: 72,
+    name: `russian truth`,
+    image: `${mediaEndPoint}/media/72/IMG_9094.JPEG`,
+    author: `Софа`,
+    subcategory: `handcraft`,
+    tags: [],
+    description: `Я Софа, студентка культурології з Києво-Могилянської академії. Завжди займалась якоюсь творчістю - фотографувала, монтувала, писала, але ніколи не визначала себе мисткинею. Менше з тим, мистецтво було і залишається улюбленим медіумом для комунікації зі світом. Зараз мені найбільше відгукуються паперові колажі. З початком повномасштабного вторгнення пряме ословлення почуттів стало проблематичним, тому я звернулась до колажування. Поєднання клаптиків зображень дозволяє мені створити концентрований пакуночок сенсів, з яких кожен дістає щось своє.`,
+}
+
+export default Project;

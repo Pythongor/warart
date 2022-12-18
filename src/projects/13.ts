@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30ceee8b4da3aee62056c08c8b615bbd8fda6250500eba98243bf173d80fddeb
-size 960
+import { GraphicArtProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: GraphicArtProjectType = {
+    category: `visual`,
+    id: 13,
+    name: "",
+    author: `marginai`,
+    image: `${mediaEndPoint}/media/13/IMG_9440.PNG`,
+    subcategory: `graphicArt`,
+    tags: [],
+    description:     "Гарькавець Ірина\nmarginai\nІлюстратор та аніматор з Харкова. " +
+    "Наразі проживаю у Вінниці. Дослідниця нового мистецтва: штучний " +
+    "інтелект, нейронні мережі. Автор короткометражних анімаційних фільмів " +
+    "«Promise», «Від недавно до давно», «Війна, яка завжди поруч» та ін., що " +
+    "здобули лаурелі у більш ніж 15 країнах світу.",
+}
+
+export default Project;

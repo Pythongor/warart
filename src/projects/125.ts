@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35322470f740801b8961403f0ecade85067ab1fb346b9523e757d29158de104d
-size 941
+import { GraphicArtProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: GraphicArtProjectType = {    category: `visual`,
+    id: 125,
+    name: `Дім`,
+    author: `Оля Гайдуш`,
+    subcategory: `graphicArt`,
+    tags: [],
+    image: `${mediaEndPoint}/media/125/Дім.jpg`,
+    description: `Гайдуш Ольга
+Народилась в м. Червоноград
+Художник-ілюстратор, працюю в  Adobe Photoshop, Adobe Illustrator
+Навчалась в Львівській академії друкарства. Звісно навчання заклало фундамент, але для того щоб стати хорошим ілюстратором потрібно багато малювати і шукати себе. Я продовжую шукати)
+Моє портфоліо: https://www.behance.net/Oli4ka`,
+}
+export default Project;

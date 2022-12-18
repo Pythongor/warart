@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1a849ce7adc3694b7287f11dec749488b62ced6a7f863437cbe381dc9650904
-size 1137
+import { TattooProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: TattooProjectType = {    category: `visual`,
+    id: 89,
+    name: "",
+    author: `Олександр Федчишин`,
+    subcategory: `tattoo`,
+    tags: [],
+    image: [
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 1.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 2.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 3.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 4.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 5.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 6.jpg`,
+        },
+        {
+        name: "",
+        src: `${mediaEndPoint}/media/89/федчишин тату 7.jpg`,
+        },
+    ],
+    description: "",
+}
+export default Project;

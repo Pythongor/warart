@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:148a733c7fb6a314fc5a4ad6d8ca42a96c1d8de819a77ef3e1a0565acebe4608
-size 973
+import { GraphicArtProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: GraphicArtProjectType = {    category: `visual`,
+    id: 119,
+    name: `Robota na vsix frontax`,
+    author: `Оля Гайдуш`,
+    subcategory: `graphicArt`,
+    tags: [],
+    image: `${mediaEndPoint}/media/119/Robota na vsix frontax.png`,
+    description: `Гайдуш Ольга
+Народилась в м. Червоноград
+Художник-ілюстратор, працюю в  Adobe Photoshop, Adobe Illustrator
+Навчалась в Львівській академії друкарства. Звісно навчання заклало фундамент, але для того щоб стати хорошим ілюстратором потрібно багато малювати і шукати себе. Я продовжую шукати)
+Моє портфоліо: https://www.behance.net/Oli4ka`,
+}
+export default Project;

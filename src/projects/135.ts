@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81e1fe8db67da96842d860cccce196566814928b7bb47e0466e4c187b6b78c9d
-size 473
+import { PhotographyProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: PhotographyProjectType = {    category: `visual`,
+    id: 135,
+    name: `Обійми мене`,
+    author: `Діана Драч`,
+    subcategory: `photography`,
+    tags: [],
+    image: `${mediaEndPoint}/media/135/Обійми мене.JPEG`,
+    description: `Paris-based amator photographer and professional musician.`,
+}
+export default Project;

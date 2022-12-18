@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b12bc5188a1838b8129134f712f20092d4acfd50ba0291fa68dc765756add79b
-size 1633
+import { GraphicArtProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: GraphicArtProjectType = {    category: `visual`,
+    id: 110,
+    name: `Володар Вічної Скорботи`,
+    author: `Оксана Назаренко`,
+    subcategory: `graphicArt`,
+    tags: [],
+    image: `${mediaEndPoint}/media/110/Володар Вічної Скорботи.png`,
+    description: `Lord of Grief Eternal(або Володар Вічної Скорботи) це кастомна карта таро на тему
+війни. Багатоповерхівка має реальний прототип із Бородянки та найкраще ілюструє
+мій власний стан, як вічного мешканця багатоповерхівок, від початку війни.
+Символізм таро дуже казковий та містичний, через це ілюструвати такий
+надреальний жах, як війна, вирішила саме через похмуру казковість
+таро. Фольклорний демонічний сокіл із двома головами, що поцілив стрілою у арку
+дружби народів, символізує імперського агресора. Сумні янголи-діти, що
+символізують загиблих, кидають квітки настурцій, що означає любов до
+батьківщини мовою квітів.
+Instagram: https://www.instagram.com/lamo3gina`,
+}
+export default Project;

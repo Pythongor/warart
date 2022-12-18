@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:363a0c99526dd09861bb858371f3c2590169c8d551eedcf9f5b09e7fa3fda0f5
-size 941
+import { GraphicArtProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: GraphicArtProjectType = {    category: `visual`,
+    id: 124,
+    name: `ЗСУ`,
+    author: `Оля Гайдуш`,
+    subcategory: `graphicArt`,
+    tags: [],
+    image: `${mediaEndPoint}/media/124/ЗСУ.jpg`,
+    description: `Гайдуш Ольга
+Народилась в м. Червоноград
+Художник-ілюстратор, працюю в  Adobe Photoshop, Adobe Illustrator
+Навчалась в Львівській академії друкарства. Звісно навчання заклало фундамент, але для того щоб стати хорошим ілюстратором потрібно багато малювати і шукати себе. Я продовжую шукати)
+Моє портфоліо: https://www.behance.net/Oli4ka`,
+}
+export default Project;

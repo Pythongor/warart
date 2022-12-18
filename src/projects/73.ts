@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ac2a6055e7c3d001b53baac75c4405317825f6954635f9ae10a175ca8b9ed22
-size 1387
+import { HandcraftProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: HandcraftProjectType = {
+    category: `visual`,
+    id: 73,
+    name: `Ціна`,
+    image: `${mediaEndPoint}/media/73/IMG_0178.JPEG`,
+    author: `Софа`,
+    subcategory: `handcraft`,
+    tags: [],
+    description: `Я Софа, студентка культурології з Києво-Могилянської академії. Завжди займалась якоюсь творчістю - фотографувала, монтувала, писала, але ніколи не визначала себе мисткинею. Менше з тим, мистецтво було і залишається улюбленим медіумом для комунікації зі світом. Зараз мені найбільше відгукуються паперові колажі. З початком повномасштабного вторгнення пряме ословлення почуттів стало проблематичним, тому я звернулась до колажування. Поєднання клаптиків зображень дозволяє мені створити концентрований пакуночок сенсів, з яких кожен дістає щось своє.`,
+}
+
+export default Project;

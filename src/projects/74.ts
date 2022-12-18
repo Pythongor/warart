@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2cda7d29f7e27fa22e94264287b76c0c121f38de5c3fff0542417b499c9f867
-size 1418
+import { HandcraftProjectType } from "projects/types";
+import { mediaEndPoint } from "../config"
+
+export const Project: HandcraftProjectType = {
+    category: `visual`,
+    id: 74,
+    name: `Він: людина, режим, міт`,
+    image: `${mediaEndPoint}/media/74/IMG_6065.png`,
+    author: `Софа`,
+    subcategory: `handcraft`,
+    tags: [],
+    description: `Я Софа, студентка культурології з Києво-Могилянської академії. Завжди займалась якоюсь творчістю - фотографувала, монтувала, писала, але ніколи не визначала себе мисткинею. Менше з тим, мистецтво було і залишається улюбленим медіумом для комунікації зі світом. Зараз мені найбільше відгукуються паперові колажі. З початком повномасштабного вторгнення пряме ословлення почуттів стало проблематичним, тому я звернулась до колажування. Поєднання клаптиків зображень дозволяє мені створити концентрований пакуночок сенсів, з яких кожен дістає щось своє.`,
+}
+
+export default Project;
