@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb43549cf006f1bc4d1102855bcb983d62164299fdefbbc2b0769abe64652332
-size 60
+node_modules
+build
+*.zip
+.env
+package-lock.json
