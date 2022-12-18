@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:111e93a574d36a7b77f630ac4d99ef1c8c4284907c51464af3fba4455728bc81
-size 801
+@import "~assets/styles/constants.scss";
+
+.container {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1130px) {
+    gap: 20px;
+  }
+  @media (max-width: 480px) {
+    margin: 0px auto 0;
+  }
+  @media (max-width: 400px) {
+    gap: 10px;
+  }
+}
+
+.link {
+  min-width: 50px;
+  background-color: white;
+  border: 2px solid black;
+  &__disabled {
+    background-color: $gray;
+  }
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+    padding: 10px 0;
+  }
+}
+
+.currentPage {
+  font-size: 15px;
+  height: 50px;
+  text-align: center;
+  padding: 13px 5px;
+  border-radius: 10px;
+  min-width: 50px;
+  background-color: $blue;
+  border: 2px solid black;
+  @media (max-width: 480px) {
+    height: 40px;
+    padding: 10px 0;
+  }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a45b413d7045564e9fac583367ca910dda6bef610a7e53dfb90ebd39a1974d32
-size 419
+import React from "react";
+import styles from "./select.module.scss";
+
+type OwnProps = {
+  options: { value: string; text: string }[];
+};
+
+const Select: React.FC<OwnProps> = ({ options }) => {
+  return (
+    <select className={styles.select}>
+      {options.map(({ value, text }) => (
+        <option key={value} value={value}>
+          {text}
+        </option>
+      ))}
+    </select>
+  );
+};
+
+export default Select;

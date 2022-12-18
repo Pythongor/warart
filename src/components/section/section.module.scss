@@ -1,3 +1,91 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa07f90423d8ac4f242d0b8a5569cb55105bef42a6cd7f467184cee3c1e0dac0
-size 1404
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  border: 5px solid black;
+  padding: 52px 45px 58px 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: white;
+  margin-bottom: 110px;
+  @media (max-width: 480px) {
+    padding: 30px 20px;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 0;
+  font-weight: 400;
+  @media (max-width: 780px) {
+    font-size: 20px;
+  }
+  @media (max-width: 650px) {
+    font-size: 18px;
+  }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.text {
+  font-size: 20px;
+  white-space: pre-wrap;
+  width: 100%;
+  & + .buttons {
+    margin-top: 60px;
+  }
+  @media (max-width: 780px) {
+    font-size: 18px;
+  }
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 24px;
+  @media (max-width: 1130px) {
+    justify-content: center;
+  }
+  @media (max-width: 480px) {
+    gap: 10px;
+  }
+}
+
+.button {
+  margin-top: auto;
+}
+
+.imageWrapper {
+  min-width: #{"min(35%, 300px)"};
+  height: 100%;
+  margin-left: 50px;
+  @media (max-width: 1130px) {
+    display: none;
+  }
+}
+
+.image {
+  width: 100%;
+  height: fit-content;
+}
