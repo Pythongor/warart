@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c78884870b6671c3738e19086e2df03ee9b841ca7226af3a3d2d0c8e5a0e10b2
-size 511
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "assets/images/logo.svg";
+import LogoText from "assets/images/logoText.svg";
+import styles from "../header.module.scss";
+
+const HeaderLogo = () => (
+  <Link to="/" className={styles.logoContainer}>
+    <img src={LogoText} className={styles.logoText} alt="Warart" />
+    <div className={styles.logoWrapper}>
+      <img src={Logo} className={styles.logo} alt="Warart logo" />
+    </div>
+  </Link>
+);
+
+export default HeaderLogo;

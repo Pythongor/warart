@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7978664075119281fd28cc5a3e3a44c9108c9877ddc7669e483863bf187e6bc2
-size 686
+export const setCookie = (key: string, value: string, expiry: string) => {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + +expiry * 24 * 60 * 60 * 1000);
+  document.cookie = `${key}=${value};expires=${expires.toUTCString()}; SameSite=Strict`;
+};
+
+export const getCookie = (key: string) => {
+  const keyValue = document.cookie.match("(^|;) ?" + key + "=([^;]*)(;|$)");
+  return keyValue ? keyValue[2] : null;
+};
+
+export const eraseCookie = (key: string) => {
+  const keyValue = getCookie(key);
+  keyValue && setCookie(key, keyValue, "-1");
+};
+
+export const getToken = () => {
+  const currentUser = getCookie("currentUser");
+  return getCookie(currentUser || "");
+};
