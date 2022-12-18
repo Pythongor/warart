@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d3f7f68cdb2faf5c21b2a2d0bad45e41ecaf82da7ea3f0d629018e0b2350046
-size 300
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  margin-top: 64px;
+  width: 100%;
+  min-height: 230px;
+  background-image: url("~assets/images/banner.svg");
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 20px solid black;
+}

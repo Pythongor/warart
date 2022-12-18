@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c774ce4cc3c64b5af83b715f2e5fc8048ce34e351987b74ac5821ab860b8caf6
-size 658
+@import "~assets/styles/constants.scss";
+
+.button {
+  background-color: $yellow;
+  min-width: 124px;
+  width: fit-content;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 13px 5px;
+  box-shadow: 1px 5px 10px rgba(black, 0.2);
+  &::first-letter {
+    text-transform: capitalize;
+  }
+  &__blue {
+    background-color: $blue;
+    color: white;
+  }
+  &__disabled {
+    background-color: $gray;
+    pointer-events: none;
+  }
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 40px;
+    padding: 12px 0;
+  }
+}

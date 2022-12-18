@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a9438c38cbdce049d251050174b3df4215ca11e450385337fe51c649f13e61d
-size 416
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  @include container;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.button {
+  display: block;
+  margin: 110px auto 0;
+  @media (max-width: 1130px) {
+    margin: 80px auto 0;
+  }
+  @media (max-width: 780px) {
+    margin: 60px auto 0;
+  }
+  @media (max-width: 480px) {
+    margin: 40px auto 0;
+  }
+  @media (max-width: 400px) {
+    margin: 40px auto 0;
+  }
+}

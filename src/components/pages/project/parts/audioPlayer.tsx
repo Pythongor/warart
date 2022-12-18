@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb1fba3805ea24f4e648f01a6a4be0ae05a9bb0d973da57dbf18b5426a9cc2b6
-size 602
+import React from "react";
+import { connect } from "react-redux";
+import { StateType } from "ducks/types";
+import { AudioTrack } from ".";
+
+type StateProps = ReturnType<typeof MSTP>;
+
+const AudioPlayer: React.FC<StateProps> = ({ currentProject }) => {
+  const audio = currentProject?.audio || "";
+  return Array.isArray(audio) ? (
+    <>
+      {audio.map(({ name, track }, index) => (
+        <AudioTrack index={index} key={index} />
+      ))}
+    </>
+  ) : (
+    <AudioTrack />
+  );
+};
+
+const MSTP = ({ currentProject }: StateType) => ({ currentProject });
+
+export default connect(MSTP)(AudioPlayer);

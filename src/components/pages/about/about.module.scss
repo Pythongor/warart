@@ -1,3 +1,99 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96ecf901b108ce3a356cb2e228d03a2e80bc9b90fd41ffbe324f63e38a408445
-size 1438
+@import "~assets/styles/constants.scss";
+
+.wrapper {
+  @include container;
+  margin-bottom: 100px;
+  @media (max-width: 1130px) {
+    margin-bottom: 100px;
+  }
+}
+
+.button {
+  display: block;
+  margin: 110px auto 0 auto;
+}
+
+.membersWrapper {
+  max-width: 920px;
+  margin-bottom: 50px;
+}
+
+.members {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 780px) {
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  @media (max-width: 1024px) {
+    width: 120px;
+  }
+  @media (max-width: 780px) {
+    width: 100px;
+  }
+}
+
+.avatar {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  @media (max-width: 780px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.role {
+  font-size: 12px;
+  text-align: center;
+}
+
+.contactsContainer {
+  margin-top: 20px;
+}
+
+.contact {
+  margin-bottom: 16px;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactName {
+  width: 140px;
+  display: inline;
+  @media (max-width: 780px) {
+    width: 100px;
+  }
+}
+
+.contactEmail {
+  display: inline;
+}
+
+.title {
+  text-transform: uppercase;
+  // @media (max-width: 780px) {
+  //   text-align: center;
+  // }
+}

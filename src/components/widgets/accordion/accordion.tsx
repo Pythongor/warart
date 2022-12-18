@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04c5e615675cd23304d2ae6c00523194712c323c48fe233b01b3d49524848fad
-size 939
+import React, { useEffect, useRef, useState } from "react";
+import cn from "classnames";
+import styles from "./accordion.module.scss";
+
+type OwnProps = {
+  isOpen?: boolean;
+  children: React.ReactNode;
+  onClick?: () => void;
+};
+
+const Accordion: React.FC<OwnProps> = ({
+  isOpen = false,
+  children,
+  onClick,
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number | null>(null);
+  useEffect(() => {
+    if (!height && ref.current) {
+      setHeight(ref.current.offsetHeight);
+    }
+  }, [ref, height]);
+  const maxHeight = isOpen ? (height ? height + 10 : undefined) : 0;
+  return (
+    <div
+      className={cn(styles.wrapper, { [styles.wrapper__open]: isOpen })}
+      onClick={onClick}
+    >
+      <div className={styles.contentWrapper} style={{ maxHeight }} ref={ref}>
+        {children}
+      </div>
+      <div className={styles.divider} />
+    </div>
+  );
+};
+
+export default Accordion;
